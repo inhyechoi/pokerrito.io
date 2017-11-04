@@ -1,0 +1,42 @@
+#n2-ss-1-align{
+    overflow:hidden;
+  }
+.about-content-images{
+display:flex;
+flex-direction:row;
+justify-content: center;
+height: 38vh;
+}
+@media screen and (min-width: 720px) {
+  .about-content-images{
+  height: 50vh;
+  }
+  .about-img1{
+    width:33.3%;
+  }
+  .about-img2{
+    width:33.3%;
+  }
+  .about-img3{
+    width:33.3%;
+  }
+}
+ 
+#site-navigation a{
+  color:white;
+  font-family: 'roboto';
+  font-weight: lighter;
+}
+
+#menu h1{
+  font-family: 'raleway', sans-serif;
+  width:180px;
+}
+.signature{
+  font-family: 'raleway', sans-serif;
+  max-width: 1000px;
+}
+.build-your-own{
+  font-family: 'raleway', sans-serif;
+  max-width:1000px;
+}

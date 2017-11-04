@@ -1,0 +1,205 @@
+.home {
+  font-family: 'roboto';
+  font-weight: lighter;
+  color:white;
+  text-align: center;
+  background-color: black;
+  .ow-logo{
+    width:20px;
+    height:20px;
+  }
+  #about{
+    padding:0 2rem;
+    margin:0 auto;
+    @include desktop{
+      max-width: 1024px;
+    }
+    #about:focus{
+      outline: none;
+    }
+    .about-logo{
+      width: 300px;
+    }
+    p{
+      margin: 3rem 0;
+    }
+  }
+  #menu{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    background-color:white;
+    color:black;
+    padding:0 2rem;
+    .foodora-button{
+      margin: 3.5rem 0 1.5rem 0;
+    }
+    #menu:focus{
+      outline: none;
+    }
+    h1{
+      font-family: 'oswald', sans-serif;
+      text-transform: uppercase;
+      border: 1px solid black;
+      width:160px;
+      font-size:3.5rem;
+      margin: 2rem 2rem 1rem 2rem;
+      &:hover{
+        background-color: #e8e8e8;
+      }
+    }
+    h2{
+      font-size:2.3rem;
+      margin:0;
+      border-bottom: solid 1px black;
+    }
+  }
+  .signature{
+    font-family: 'oswald', sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1024px;
+    h3{
+      margin: 0.5rem;
+    }
+    .sig-menu-ingre{
+      margin-bottom:0;
+    }
+  }
+  .build-your-own{
+    flex-direction: column;
+    font-family: 'oswald', sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    .byo-title{
+      font-size: 2.3rem;
+    } 
+    .byo-one{
+      margin-bottom:0;
+    }
+    h3{
+      font-size: 1.71em; 
+    }
+    h4{
+      font-size: 1rem;
+      margin: 0rem;
+    }
+    .byo-base{
+      display:flex;
+      align-items: center;
+      flex-direction: column;
+      .base-icons{
+        display:flex;
+        align-items: center;
+        max-width: 1024px;
+      }
+      .base-text{
+        display:flex; 
+        max-width: 1024px;      
+      }
+      li{
+        width: 30vw;
+        padding:0.3rem;
+      }
+    }
+    .byo-div{
+      display:flex;
+      flex-direction:row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    h3{
+        width: 100%;
+      }
+    .protein-div{
+      display:flex;
+      flex-direction: row;
+      flex-wrap:wrap;
+      width:100%;
+      justify-content: center;
+      // @include desktop{
+      //   width: 30%;
+      // }
+      .protein-item{
+        margin: 0.5rem 0;
+      }
+    }
+    .mixin-div{
+      display:flex;
+      flex-direction: row;
+      flex-wrap:wrap;
+      width:100%;
+      justify-content: center;
+      // @include desktop{
+      //   width: 30%;
+      // }
+      .mixin-item{
+        margin: 0.5rem 0;
+      }
+    }
+    .sauce-div{
+      display:flex;
+      flex-direction: row;
+      flex-wrap:wrap;
+      width:100%;
+      justify-content: center;
+      // @include desktop{
+      //   width: 30%;
+      // }
+      .sauce-item{
+        margin: 0.5rem 0;
+      }
+    }
+    .side-div{
+      display:flex;
+      flex-direction: row;
+      flex-wrap:wrap;
+      width:100%;
+      justify-content: center;
+      // @include desktop{
+      //   width: 30%;
+      // }
+      .side-item{
+        margin: 0.5rem 0;
+      }
+    }
+    .topping-div{
+      display:flex;
+      flex-direction: row;
+      flex-wrap:wrap;
+      width:100%;
+      justify-content: center;
+      max-width: 500px;
+      // @include desktop{
+      //   width: 30%;
+      // }
+      .topping-item{
+        margin: 0.5rem 0;
+      }
+    }
+    .addcrunch-div{
+      display:flex;
+      flex-direction: row;
+      flex-wrap:wrap;
+      width:100%;
+      justify-content: center;
+      // @include desktop{
+      //   width: 30%;
+      // }
+      .addcrunch-item{
+        margin: 0.5rem 0;
+      }
+    }
+    .ow-legend{
+      width: 500px;
+      padding: 2rem;
+    }
+  }
+}
+
+

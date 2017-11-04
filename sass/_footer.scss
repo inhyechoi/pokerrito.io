@@ -1,0 +1,22 @@
+.footer{
+    height: 100px;
+    font-family:'roboto';
+    font-weight:lighter;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:black;
+    .site{
+      margin-bottom:0.3rem;
+    }
+    .terms{
+      margin:0;
+      font-size:0.7rem;
+      color:white;
+      text-decoration: none;
+      &:hover{
+        color:red;
+      }
+    }
+}

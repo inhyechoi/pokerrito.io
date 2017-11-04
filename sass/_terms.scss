@@ -1,0 +1,27 @@
+.page-id-64{
+  background-color: #000;
+  color: #fff;
+  font-family: 'roboto';
+  font-weight: lighter;
+  padding: 2rem;
+  font-size:1.3rem;
+  li{
+    font-size:1rem;
+    padding:0.3rem 2rem;
+  }
+  @include desktop{
+    padding:4rem;
+  }
+  h1{
+    font-family: oswald,sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding: 1rem;
+    margin-bottom: .5rem;
+    border: 1px solid #fff;
+    width: 310px;
+    margin: 4rem auto;
+    color: #fff;
+  }
+
+}

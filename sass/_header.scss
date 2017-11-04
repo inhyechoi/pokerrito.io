@@ -1,0 +1,159 @@
+#site-navigation{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  background:black;
+  height:100px;
+  a{
+    color:white;
+    font-family: 'roboto';
+    font-weight: lighter;
+  }
+}
+
+.logo-white {
+  width: 150px;
+  padding: 1rem;
+  margin: 0 0 0 2rem;
+  @include desktop{
+    margin-left: 10rem;
+  }
+}
+.responsive-menu{
+  z-index: 9999;
+  padding: 1rem;
+  margin: 0 2.3rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  right: 0;
+  top: 15px;
+  @include desktop{
+    margin-right: 10.5rem;
+  }
+}
+
+// Burger menu button
+#navigation1{
+  ul{
+    display:flex;
+    flex-direction: column;
+    text-align: right;
+  }
+}
+$burger--thickness: 4px;
+.burger {
+	$width: 28px;
+	height: 23px;
+	display: inline-block;
+  border: 0;
+	background: none;
+	outline: 0;
+	padding: 0;
+	cursor: pointer;
+  color:white;
+
+	border-bottom: $burger--thickness solid currentColor;
+	width: $width;
+
+	transition: border-bottom 1s ease-in-out;
+	-webkit-transition: border-bottom 1s ease-in-out; 
+
+	// Fix for extra space in Firefox
+	&::-moz-focus-inner {
+		border: 0;
+		padding: 0;
+	}	 
+
+	&:before {
+		content: "";
+		display: block;
+		border-bottom: $burger--thickness solid currentColor;
+		width: 100%;
+		margin-bottom: 5px;
+		transition: transform 0.5s ease-in-out;    
+		-webkit-transition: -webkit-transform 0.5s ease-in-out;        
+	}
+
+	&:after {
+		content: "";
+		display: block;
+		border-bottom: $burger--thickness solid currentColor;
+		width: 100%;
+		margin-bottom: 5px;
+		transition: transform 0.5s ease-in-out;
+		-webkit-transition: -webkit-transform 0.5s ease-in-out;
+	}
+}
+
+.burger-check {
+  display: none;
+}
+
+.burger-check:checked ~ .burger {
+  border-bottom: $burger--thickness solid transparent;
+  transition: border-bottom 0.8s ease-in-out;
+  -webkit-transition: border-bottom 0.8s ease-in-out;
+
+  &:before {
+    transform: rotate(-405deg) translateY(1px) translateX(-3px);
+    -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);      
+    transition: transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  }
+
+  &:after {
+    transform: rotate(405deg) translateY(-4px) translateX(-5px); 
+    -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);       
+    transition: transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  }
+}
+
+// * * * Navigation * * *
+$navigation__transition: max-height 0.5s ease-in-out;
+
+.navigation {
+  overflow: hidden;
+  max-height: 0;
+  
+  transition: $navigation__transition;
+}
+
+.burger-check:checked ~ .navigation {
+  max-height: 500px;
+  
+  transition: $navigation__transition;
+}
+
+// * * * Demo * * *
+
+
+a {
+  color: inherit;
+}
+
+small {
+  font-size: 14px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  font-size: 1.2rem;
+  padding: 5px 0;
+  
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }    
+  }
+}
