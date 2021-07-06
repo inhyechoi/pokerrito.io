@@ -1,4 +1,4 @@
-```php
+```html
 <?php
 /**
  * The main template file.
